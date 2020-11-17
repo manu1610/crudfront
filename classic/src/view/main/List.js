@@ -16,7 +16,7 @@ Ext.define('crudfront.view.main.List', {
     },
 
     columns: [
-        { text: 'Name',  dataIndex: 'name', flex: 1 },
+        { text: 'Nombre Completo',  dataIndex: 'name', flex: 1 },
         { text: 'Email', dataIndex: 'email', flex: 1 },
         { text: 'Phone', dataIndex: 'phone', flex: 1 }
     ],

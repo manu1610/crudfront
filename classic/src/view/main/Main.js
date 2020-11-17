@@ -84,9 +84,9 @@ Ext.define('crudfront.view.main.Main', {
     }, {
         title: 'Users',
         iconCls: 'fa-user',
-        bind: {
-            html: '{loremIpsum}'
-        }
+        items: [{
+            xtype: 'persongrid'
+        }]
     }, {
         title: 'Groups',
         iconCls: 'fa-users',
