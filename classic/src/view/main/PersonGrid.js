@@ -37,7 +37,12 @@ Ext.define('crudfront.view.main.PersonGrid',{
             srtable:false,
             handler: 'onRowDeleteClick'
         }]
-    }, {
+    }, 
+    {
+        text:'ID',
+        Width:80,
+        dataIndex:'id'
+    },{
         text:'Name',
         flex:1,
         minWidth:100,

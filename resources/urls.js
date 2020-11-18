@@ -7,7 +7,9 @@ let _targetApi = {
 
 let target={
     personasApi:{
-        getAll: _targetApi.personas + '/findAll',
-        insert: _targetApi.personas + '/insert'
+        getAll: _targetApi.personas + '/findAllActive',
+        insert: _targetApi.personas + '/insert',
+        update: _targetApi.personas + '/update',
+        delete: _targetApi.personas + '/delete'
     }
 };

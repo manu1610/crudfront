@@ -20,7 +20,11 @@ Ext.define('crudfront.view.main.PersonForm',{
             allowBlank:false,
             style:'margin: 5px'
         },
-        items:[{
+        items:[
+            {
+            fieldLabel: 'ID',
+            name: 'id'
+            },{
             fieldLabel:'Name',
             name:'name'
         }, {

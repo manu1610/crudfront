@@ -12,7 +12,7 @@ Ext.define('crudfront.view.PersonClient',{
                         if(params.success){
                             params.success();
                         }else{
-                            Ext.toast('Data saverd!');
+                            Ext.toast('Data saved!');
                         }
                     }else{
                         Ext.toast(jsonBody.message);

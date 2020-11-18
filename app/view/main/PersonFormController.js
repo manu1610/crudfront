@@ -10,13 +10,13 @@ Ext.define('crudfront.view.main.PersonFormController',{
         console.log(values);
         try{
             if(!from.isValid()){
-                Ext.toast('Please reviewd your information');
+                Ext.toast('Por favor verifica tu informacion');
                 return;
             }
             let client=new crudfront.view.PersonClient();
             let url= target.personasApi.insert;
             if(view.getMode()==='update'){
-                url='http://localhost/libraryapi/endpoint/book/update.php?id='+values.id;
+                url=target.personasApi.insert+'/'+values.id;
             }
             client.post({
                 url:url,
