@@ -38,6 +38,10 @@ Ext.define('crudfront.view.main.PersonGrid',{
             handler: 'onRowDeleteClick'
         }]
     }, {
+        text:'ID',
+        width:80,
+        dataIndex:'id'
+    },{
         text:'Name',
         flex:1,
         minWidth:100,
@@ -57,7 +61,7 @@ Ext.define('crudfront.view.main.PersonGrid',{
         text:'Fecha de  nacimiento',
         flex:1,
         minWidth:100,
-        format: 'd-m-Y',
+        format: 'Y-m-d',
         dataIndex:'birthdate'
     },{
         text:'Genero',

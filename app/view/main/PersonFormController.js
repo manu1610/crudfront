@@ -16,7 +16,7 @@ Ext.define('crudfront.view.main.PersonFormController',{
             let client=new crudfront.view.PersonClient();
             let url= target.personasApi.insert;
             if(view.getMode()==='update'){
-                url='http://localhost/libraryapi/endpoint/book/update.php?id='+values.id;
+                url=target.personasApi.update+'/'+values.id;
             }
             client.post({
                 url:url,

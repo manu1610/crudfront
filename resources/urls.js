@@ -8,6 +8,8 @@ let _targetApi = {
 let target={
     personasApi:{
         getAll: _targetApi.personas + '/findAll',
-        insert: _targetApi.personas + '/insert'
+        insert: _targetApi.personas + '/insert',
+        delete: _targetApi.personas + '/delete',
+        update: _targetApi.personas + '/update'
     }
 };
